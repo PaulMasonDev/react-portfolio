@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Slab&display=swap");
+
+body {
+  font-family: $default-paragraph-font;
+  font-weight: 400;
+  font-size: $default-font-size;
+  line-height: 1.7;
+  color: $color-font-primary;
+  background-color: $color-light;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $default-heading-font;
+}
+
+p {
+  font-size: 2rem;
+}

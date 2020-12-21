@@ -1,0 +1,20 @@
+.PortfolioDetails {
+  background-color: $color-background-light;
+  padding: $default-padding;
+  position: relative;
+  &__project-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    &--image {
+      width: 20vw;
+      object-fit: cover;
+    }
+  }
+  &__image-and-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

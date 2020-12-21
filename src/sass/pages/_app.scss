@@ -1,0 +1,12 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-light;
+  .main {
+    height: 94vh;
+  }
+  &__portfolio {
+    width: $default-width;
+    min-height: 55vh;
+  }
+}
