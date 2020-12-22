@@ -6,6 +6,7 @@
   padding-top: 1rem;
   width: 100%;
   text-align: center;
+  filter: $default-drop-shadow;
 }
 
 .LeftBar {
@@ -23,7 +24,6 @@
 
 .RightBar {
   ul {
-    margin-top: 2rem;
     li {
       font-size: 2rem;
       text-align: end;
@@ -33,5 +33,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2rem;
+    background-color: $color-light;
+    padding: $default-padding;
+    margin-top: 4rem;
+    filter: $default-drop-shadow;
   }
 }

@@ -4,4 +4,12 @@
   background-color: $color-background-light;
   margin-left: 2rem;
   margin-right: 2rem;
+  filter: $default-drop-shadow;
+}
+
+@media ($phone-max) {
+  .Hero {
+    width: 89vw;
+    margin-left: 0;
+  }
 }

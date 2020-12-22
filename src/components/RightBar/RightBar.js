@@ -21,12 +21,11 @@ const RightBar = () => {
         <li>Git</li>
         <li>GitHub</li>
         <li>Heroku</li>
-        <li>Netlify</li>
       </ul>
-      <div className="Rightbar__devicons">
+      <div className="RightBar__devicons">
         {devicons.map((devicon) => {
           return (
-            <InlineSVG className="Rightbar__devicons--icon" src={devicon.svg} />
+            <InlineSVG className="RightBar__devicons--icon" src={devicon.svg} />
           );
         })}
       </div>

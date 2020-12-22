@@ -2,7 +2,7 @@ import ProjectActionTypes from "./project.types";
 
 const INITIAL_STATE = {
   //Set this to default the project that is displayed
-  currentProjectName: "True Friends",
+  currentProjectName: "",
 };
 
 const projectReducer = (state = INITIAL_STATE, action) => {

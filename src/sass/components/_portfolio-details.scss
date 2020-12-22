@@ -2,6 +2,7 @@
   background-color: $color-background-light;
   padding: $default-padding;
   position: relative;
+  filter: $default-drop-shadow;
   &__project-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -13,6 +14,7 @@
       height: 20vh;
       width: 100%;
       object-fit: cover;
+      filter: $default-drop-shadow;
     }
   }
   &__links {
@@ -35,6 +37,24 @@
     &--gh-link {
       svg {
       }
+    }
+  }
+}
+
+@media ($phone-max) {
+  .PortfolioDetails {
+    width: 89vw;
+    &__project-info {
+      display: flex;
+      flex-direction: column;
+      padding-left: 0;
+      &--description {
+        padding-bottom: 2rem;
+      }
+    }
+    &__links {
+      position: static;
+      margin-top: -1rem;
     }
   }
 }
