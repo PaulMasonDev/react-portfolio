@@ -1,11 +1,11 @@
 import React from "react";
 
-import Hero from "./components/Hero/Hero";
-import PortfolioFilter from "./components/PortfolioFilter/PortfolioFilter";
-import PortfolioDetails from "./components/PortfolioDetails/PortfolioDetails";
-import Contact from "./components/Contact/Contact";
-import LeftBar from "./components/LeftBar/LeftBar";
-import RightBar from "./components/RightBar/RightBar";
+// import Hero from "./components/Hero/Hero";
+// import PortfolioFilter from "./components/PortfolioFilter/PortfolioFilter";
+// import PortfolioDetails from "./components/PortfolioDetails/PortfolioDetails";
+// import Contact from "./components/Contact/Contact";
+// import LeftBar from "./components/LeftBar/LeftBar";
+// import RightBar from "./components/RightBar/RightBar";
 
 function App() {
   return (
