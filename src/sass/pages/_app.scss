@@ -34,3 +34,121 @@
     }
   }
 }
+$test-margin: 5vh;
+$main-height: 75vh;
+$header-height: 14vh;
+
+.Portfolio {
+  color: #fff;
+  .Header {
+    display: flex;
+    justify-content: space-around;
+    height: $header-height;
+    // margin-top: $test-margin;
+    margin-bottom: $test-margin;
+    background-color: black;
+    margin-left: 33vw;
+    margin-right: $test-margin;
+
+    &__hero {
+      background-color: orangered;
+      align-self: center;
+    }
+
+    &__resume {
+      background-color: green;
+    }
+  }
+
+  .Main {
+    display: flex;
+    height: $main-height;
+    background-color: black;
+    margin-left: $test-margin;
+    margin-right: $test-margin;
+    &__dynamic {
+      background-color: orangered;
+      width: calc((100vw - #{$test-margin} * 3) * 2 / 3);
+      margin-right: $test-margin;
+
+      &__default {
+        display: flex;
+        &--about-me {
+          width: calc(50% - #{$test-margin});
+          background-color: pink;
+          margin-right: $test-margin;
+        }
+        &--my-skills {
+          width: 50%;
+          background-color: purple;
+        }
+      }
+      &__projects {
+        background-color: blue;
+        width: 100%;
+      }
+    }
+    &__project-selector {
+      width: calc((100vw - #{$test-margin} * 3) * 1 / 3);
+      background-color: green;
+    }
+  }
+
+  .Footer {
+    height: calc(100vh - #{$header-height} - #{$main-height} - #{$test-margin});
+    margin-left: $test-margin;
+    margin-right: $test-margin;
+    background-color: black;
+  }
+}
+
+@media ($phone-max) {
+  .Portfolio {
+    position: relative;
+    min-height: 100%;
+    .Content {
+      height: 100vh;
+      padding-bottom: 3rem;
+      .Header {
+        margin: 0 auto;
+        &__hero {
+        }
+
+        &__resume {
+        }
+      }
+
+      .Main {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+
+        &__dynamic {
+          &__default {
+            flex-direction: column;
+            &--about-me {
+              width: 100vw;
+            }
+            &--my-skills {
+              width: 100vw;
+            }
+          }
+          &__projects {
+          }
+        }
+        &__project-selector {
+          width: 100vw;
+        }
+      }
+    }
+
+    .Footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 3rem;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
