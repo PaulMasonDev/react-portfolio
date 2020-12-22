@@ -44,4 +44,9 @@
   .RightBar {
     display: none;
   }
+  .LeftBar {
+    &--img {
+      width: 25%;
+    }
+  }
 }
