@@ -2,21 +2,20 @@
   background-color: $color-background-light;
   padding: $default-padding;
   margin-right: $default-padding;
-
+  max-height: 100%;
   ul {
-  }
-  li {
-    list-style: none;
-    font-size: 2rem;
+    li {
+      list-style: none;
+      font-size: 2rem;
 
-    .project-name {
-      font-size: 3rem;
-      transition: all 0.5s;
-      padding: calc(#{$default-padding} / 2);
-      border-radius: 10px;
-      &:hover {
-        cursor: pointer;
-        animation: fill-right 0.5s forwards;
+      .project-name {
+        font-size: 3rem;
+        transition: all 0.2s;
+        padding: calc(#{$default-padding} / 2);
+        &:hover {
+          cursor: pointer;
+          animation: fill 0.5s forwards;
+        }
       }
     }
   }

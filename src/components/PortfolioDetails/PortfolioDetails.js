@@ -1,4 +1,11 @@
 import React from "react";
+
+import { connect } from "react-redux";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+
 import projects from "./project-details";
 
 const PortfolioDetails = ({ currentProjectName }) => {
@@ -11,7 +18,9 @@ const PortfolioDetails = ({ currentProjectName }) => {
       <h1>Project Details</h1>
       {currentProject ? (
         <div>
-          <h3 className="PortfolioDetails--name">{currentProject.name}</h3>
+          <h3 className="PortfolioDetails--name u-margin-top-small">
+            {currentProject.name}
+          </h3>
           <div className="PortfolioDetails__project-info">
             <div className="PortfolioDetails__project-info--description">
               {currentProject.description}
@@ -22,23 +31,23 @@ const PortfolioDetails = ({ currentProjectName }) => {
               alt={currentProject.name}
             />
           </div>
-          <div className="PortfolioDetails__image-and-links">
-            <div className="PortfolioDetails__image-and-links--link">
+          <div className="PortfolioDetails__links u-margin-top-small">
+            <div className="PortfolioDetails__links--link">
               <a
                 href={currentProject.href}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Live link to {currentProject.name}
+                <FontAwesomeIcon icon={faGlobe} />
               </a>
             </div>
-            <div className="PortfolioDetails__image-and-links--gh-link">
+            <div className="PortfolioDetails__links--gh-link u-margin-top-small">
               <a
                 href={currentProject.github}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Github Link
+                <FontAwesomeIcon icon={faGithub} />
               </a>
             </div>
           </div>
@@ -50,4 +59,8 @@ const PortfolioDetails = ({ currentProjectName }) => {
   );
 };
 
-export default PortfolioDetails;
+const mapStateToProps = (state) => ({
+  currentProjectName: state.projects.currentProjectName,
+});
+
+export default connect(mapStateToProps)(PortfolioDetails);

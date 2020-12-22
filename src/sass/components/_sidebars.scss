@@ -1,0 +1,37 @@
+.LeftBar,
+.RightBar {
+  background-color: $color-background-light;
+  margin-top: $default-padding;
+  padding: $default-padding;
+  padding-top: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.LeftBar {
+  &--img {
+    width: 90%;
+    margin-top: 1rem;
+    filter: blur(5px);
+    transition: all 0.2s;
+    &:hover {
+      filter: blur(0px);
+      outline: 5px solid $color-accent;
+    }
+  }
+}
+
+.RightBar {
+  ul {
+    margin-top: 2rem;
+    li {
+      font-size: 2rem;
+      text-align: end;
+    }
+  }
+  &__devicons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+}

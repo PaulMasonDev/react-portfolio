@@ -21,3 +21,20 @@ h6 {
 p {
   font-size: 2rem;
 }
+
+li {
+  list-style: none;
+}
+
+a:link,
+a:visited {
+  font-size: 2rem;
+  text-decoration: none;
+  transition: all 0.2s;
+  padding: calc(#{$default-padding} / 2);
+  color: $color-font-primary;
+}
+
+a:hover {
+  animation: icon-fill 0.2s forwards;
+}

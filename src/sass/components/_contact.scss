@@ -1,3 +1,10 @@
 .Contact {
-  height: 5vh;
+  &__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a:hover {
+      animation: icon-fill-alt 0.2s forwards;
+    }
+  }
 }

@@ -1,7 +1,7 @@
 const projects = [
   {
     name: "True Friends",
-    description: `It's as if a todo list and a personal shopper had a baby.  Keep track of your friends and families, and all of their special occasions.  Keep a list of what you want to buy them, and then go to a dynamically generated search at a Bix Box retailer's site.  Are you a true friend?`,
+    description: `It's as if a todo list and a personal shopper had a baby.  Keep track of your friends and families, and all of their special occasions.  Keep a list of what you want to buy them, and then go to a dynamically generated search at a Big Box retailer's site.  Are you a true friend?`,
     href: "https://true-friends.herokuapp.com/",
     image: "https://live.staticflickr.com/65535/50741308898_60070dab53_m.jpg",
     github: "https://github.com/PaulMasonDev/true-friends-v3",

@@ -1,33 +1,14 @@
 import React, { useEffect } from "react";
 //www.npmjs.com/package/ityped
 import { init } from "ityped";
-// import textStrings from "./ityped-text";
+import textStrings from "./ityped-text";
 
 const Hero = () => {
   useEffect(() => {
     const myElement = document.querySelector("#Hero__heading--itype");
     init(myElement, {
       showCursor: true,
-      strings: [
-        "Web Developer",
-        "Web Designer",
-        "React Addict",
-        "MongoDB Lover",
-        "Agile Worker",
-        "API Afficionado",
-        "Bug Squasher",
-        "Video Game Connoisseur",
-        "If you are still reading this",
-        "You have the patience of a",
-        "saint.",
-        "See you waited for that one",
-        "Can I hire you as a babysitter?",
-        "You would make an amazing teacher!",
-        "Or maybe a professional paint-dry watcher?",
-        "The choice is yours",
-        "Don't say I never gave you anything",
-        "That advice I laid down doesn't come cheap!",
-      ],
+      strings: textStrings,
       typeSpeed: 100,
       backspeed: 50,
       backDelay: 500,
@@ -43,8 +24,8 @@ const Hero = () => {
         developing applications for genuine user needs. I get excited about
         creating new applications that tap into the power of public APIs. With
         the careful use of asynchronous javascript and by creating responsive
-        front-end interfaces, I am able to display the most important pieces of
-        information for the client's needs.
+        front-end interfaces, I am able to consisely display the most important
+        pieces of information.
       </p>
       <p className="Hero__paragraph u-margin-top-small">
         I have experience building full stack applications with both React and

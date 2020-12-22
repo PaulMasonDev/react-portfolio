@@ -1,15 +1,17 @@
 import React from "react";
+import { connect } from "react-redux";
+import { setProjectName } from "../../redux/project/project.actions";
 // import InlineSVG from "svg-inline-react";
 // import devicons from "./devicons";
 import projects from "../PortfolioDetails/project-details";
 
-const PortfolioFilter = ({ passUpProject }) => {
+const PortfolioFilter = ({ setProjectName }) => {
   const handleClick = (e) => {
-    passUpProject(e.target.textContent);
+    setProjectName(e.target.textContent);
   };
   return (
     <div className="PortfolioFilter">
-      <h1>My Work</h1>
+      <h1>Personal Work</h1>
       <ul className="u-margin-top-small">
         {projects.map((project) => {
           return (
@@ -27,4 +29,8 @@ const PortfolioFilter = ({ passUpProject }) => {
   );
 };
 
-export default PortfolioFilter;
+const mapDispatchToProps = (dispatch) => ({
+  setProjectName: (name) => dispatch(setProjectName(name)),
+});
+
+export default connect(null, mapDispatchToProps)(PortfolioFilter);

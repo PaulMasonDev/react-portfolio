@@ -26,9 +26,22 @@
   }
 }
 
-@keyframes fill-right {
+@keyframes fill {
   100% {
-    background-color: $color-background-dark;
-    color: $color-light;
+    // background-color: $color-background-dark;
+    // color: $color-light;
+    outline: 5px solid $color-accent;
+  }
+}
+
+@keyframes icon-fill {
+  100% {
+    color: $color-accent;
+  }
+}
+
+@keyframes icon-fill-alt {
+  100% {
+    color: $color-accent;
   }
 }

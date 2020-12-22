@@ -2,6 +2,7 @@ const textStrings = [
   "Web Developer",
   "Web Designer",
   "React Addict",
+  "Redux Fiend",
   "MongoDB Lover",
   "Agile Worker",
   "API Afficionado",
