@@ -19,6 +19,8 @@ const Hero = () => {
       <h1 className="Hero__heading">
         Paul Mason . . . &nbsp;<span id="Hero__heading--itype"></span>
       </h1>
+      <h1 className="Hero__heading--mobile">Paul Mason</h1>
+
       <p className="Hero__paragraph u-margin-top-small">
         Passionate web developer and life-long learner with a love for
         developing applications for genuine user needs. I get excited about

@@ -11,7 +11,7 @@ const PortfolioFilter = ({ setProjectName }) => {
   };
   return (
     <div className="PortfolioFilter">
-      <h1>Personal Work</h1>
+      <h1>Personal Project</h1>
       <ul className="u-margin-top-small">
         {projects.map((project) => {
           return (

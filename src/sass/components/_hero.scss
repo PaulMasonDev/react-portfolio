@@ -5,11 +5,24 @@
   margin-left: 2rem;
   margin-right: 2rem;
   filter: $default-drop-shadow;
+  &__heading--mobile {
+    display: none;
+    text-align: center;
+  }
 }
 
 @media ($phone-max) {
   .Hero {
     width: 89vw;
     margin-left: 0;
+    &__heading {
+      display: none;
+    }
+    #Hero__heading--itype {
+      display: none;
+    }
+    &__heading--mobile {
+      display: block;
+    }
   }
 }

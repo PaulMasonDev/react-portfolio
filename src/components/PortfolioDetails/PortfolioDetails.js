@@ -54,7 +54,7 @@ const PortfolioDetails = ({ currentProjectName }) => {
         </div>
       ) : (
         <div>
-          <p>Please select a project to the left</p>
+          <p>Please select a project</p>
         </div>
       )}
     </div>
