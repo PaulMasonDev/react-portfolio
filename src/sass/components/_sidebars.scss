@@ -39,3 +39,9 @@
     filter: $default-drop-shadow;
   }
 }
+
+@media ($phone-max) {
+  .RightBar {
+    display: none;
+  }
+}
