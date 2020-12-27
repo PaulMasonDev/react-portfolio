@@ -1,6 +1,7 @@
 import React from "react";
 
 import resume from "./Paul_Mason-Resume.pdf";
+import profile from "./aboutMe1.jpg";
 
 const LeftBar = () => {
   return (
@@ -13,6 +14,7 @@ const LeftBar = () => {
           alt="Resume"
         />
       </a>
+      <img className="LeftBar--profile" src={profile} alt="Profile" />
     </div>
   );
 };

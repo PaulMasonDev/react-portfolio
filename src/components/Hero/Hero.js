@@ -4,22 +4,22 @@ import { init } from "ityped";
 import textStrings from "./ityped-text";
 
 const Hero = () => {
-  // useEffect(() => {
-  //   const myElement = document.querySelector("#Hero__heading--itype");
-  //   init(myElement, {
-  //     showCursor: true,
-  //     strings: textStrings,
-  //     typeSpeed: 100,
-  //     backspeed: 50,
-  //     backDelay: 500,
-  //   });
-  // });
+  useEffect(() => {
+    const myElement = document.querySelector("#Hero__heading--itype");
+    init(myElement, {
+      showCursor: true,
+      strings: textStrings,
+      typeSpeed: 100,
+      backspeed: 50,
+      backDelay: 500,
+    });
+  });
   return (
     <div className="Hero u-margin-center">
-      {/* <h1 className="Hero__heading">
+      <h1 className="Hero__heading">
         Paul Mason . . . &nbsp;<span id="Hero__heading--itype"></span>
       </h1>
-      <h1 className="Hero__heading--mobile">Paul Mason</h1> */}
+      <h1 className="Hero__heading--mobile">Paul Mason</h1>
       <h3>About Me</h3>
       <p className="Hero__paragraph u-margin-top-small">
         Passionate web developer and life-long learner with a love for

@@ -10,6 +10,9 @@
 }
 
 .LeftBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   &--img {
     width: 90%;
     margin-top: 1rem;
@@ -19,6 +22,10 @@
       filter: blur(0px);
       outline: 5px solid $color-accent;
     }
+  }
+  &--profile {
+    width: 100%;
+    align-self: center;
   }
 }
 
