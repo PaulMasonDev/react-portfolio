@@ -1,6 +1,6 @@
 import React from "react";
 
-import resume from "./Paul_Mason_-_Front_end_Developer.pdf";
+import resume from "./Paul_Mason-Resume.pdf";
 
 const LeftBar = () => {
   return (

@@ -39,47 +39,49 @@ $main-height: 75vh;
 $header-height: 14vh;
 
 .Portfolio {
-  color: #fff;
   .Header {
     display: flex;
     justify-content: space-around;
     height: $header-height;
     // margin-top: $test-margin;
     margin-bottom: $test-margin;
-    background-color: black;
+
     margin-left: 33vw;
     margin-right: $test-margin;
 
     &__hero {
-      background-color: orangered;
       align-self: center;
     }
 
     &__resume {
-      background-color: green;
+      background-color: $color-background-light;
+      border-radius: 0 0 50px 50px;
+      padding: $default-padding;
     }
   }
 
   .Main {
     display: flex;
     height: $main-height;
-    background-color: black;
+
     margin-left: $test-margin;
     margin-right: $test-margin;
     &__dynamic {
-      background-color: orangered;
       width: calc((100vw - #{$test-margin} * 3) * 2 / 3);
       margin-right: $test-margin;
 
       &__default {
         display: flex;
         &--about-me {
-          width: calc(50% - #{$test-margin});
-          background-color: pink;
+          .Hero {
+            width: fit-content;
+          }
+          width: calc(55% - #{$test-margin});
+
           margin-right: $test-margin;
         }
         &--my-skills {
-          width: 50%;
+          width: 45%;
           background-color: purple;
         }
       }
